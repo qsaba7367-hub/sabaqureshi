@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)https://run-html-chat.deepseeksvc.com/usercontent/usercontent.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
+    <title>SABA · AI &amp; ML · Professional Blue</title>
+    <!-- Font Awesome 6 (free) -->
+    <link rel="stylesheet" href="./all.min.css">
+    <!-- Google Fonts: Inter + Merriweather for clean corporate look -->
+    <link href="./css2" rel="stylesheet">
+    <style>body { margin: 0; }</style><style>
+        /* ----- PROFESSIONAL BLUE & WHITE COLOR SCHEME ----- 
+            Navy Blue       #0A2472   (deep, trustworthy)
+            Royal Blue      #1E3A8A   (classic)
+            Sky Blue        #E6F0FA   (background, airy)
+            Soft White      #FFFFFF   (clean cards)
+            Cool Gray       #F8FAFC   (subtle contrast)
+            Slate           #334155   (body text)
+            Accent Blue     #2563EB   (vibrant, interactive)
+        ------------------------------------------------------ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #E6F0FA;  /* Sky blue background, very light */
+            font-family: 'Inter', sans-serif;
+            color: #1E293B;  /* Slate dark */
+            line-height: 1.6;
+            padding: 2rem 1.5rem;
+        }
+
+        .page {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #FFFFFF;  /* pure white */
+            border-radius: 28px;
+            box-shadow: 0 20px 35px -8px rgba(10, 36, 114, 0.08), 0 10px 15px -6px rgba(0,0,0,0.02);
+            padding: 2.5rem 2.5rem;
+            border: 1px solid rgba(37, 99, 235, 0.1);
+        }
+
+        /* Typography – clean, professional */
+        h1, h2, h3, h4 {
+            font-weight: 600;
+            letter-spacing: -0.01em;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #0A2472; /* Deep navy */
+            font-family: 'Merriweather', serif;
+            line-height: 1.2;
+            margin-bottom: 0.25rem;
+        }
+
+        h2 {
+            font-size: 1.7rem;
+            border-bottom: 3px solid #2563EB; /* Vibrant accent blue */
+            display: inline-block;
+            padding-bottom: 6px;
+            margin-top: 1.8rem;
+            margin-bottom: 1.2rem;
+            color: #0A2472;
+            font-weight: 600;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            color: #1E3A8A; /* royal blue */
+            margin-bottom: 0.35rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        h3 i {
+            color: #2563EB;
+            font-size: 1.2rem;
+            width: 1.6rem;
+        }
+
+        .subhead {
+            font-size: 1.1rem;
+            color: #4B5563;
+            font-weight: 400;
+            margin-bottom: 0.4rem;
+        }
+
+        a {
+            color: #2563EB;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: #0A2472;
+            text-decoration: underline;
+        }
+
+        /* ----- PROFESSIONAL CONTACT BAR (blue tones) ----- */
+        .contact-bar {
+            background: #F8FAFC; /* cool light gray */
+            padding: 0.9rem 1.8rem;
+            border-radius: 60px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            color: #1E293B;
+            margin: 1.5rem 0 1rem 0;
+            font-weight: 500;
+            border: 1px solid #E2E8F0;
+            box-shadow: 0 2px 5px rgba(37,99,235,0.05);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-item i {
+            font-size: 1.2rem;
+            color: #2563EB; /* accent blue */
+        }
+
+        .edu-badge {
+            background: #E6F0FA;
+            padding: 0.3rem 0.9rem;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #0A2472;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border: 1px solid #BFDBFE;
+        }
+
+        /* grid layout */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .edu-card {
+            background: #F8FAFC;
+            padding: 1.4rem 1.6rem;
+            border-radius: 20px;
+            border-left: 8px solid #2563EB;
+            box-shadow: 0 2px 6px rgba(37,99,235,0.06);
+        }
+
+        .marks {
+            font-weight: 700;
+            color: #1E3A8A;
+            background: #E6F0FA;
+            padding: 0.2rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin-top: 0.25rem;
+        }
+
+        .skill-blocks {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-top: 0.8rem;
+        }
+
+        .skill-tag {
+            background: #F8FAFC;
+            padding: 0.4rem 1.2rem;
+            border-radius: 40px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border: 1px solid #CBD5E1;
+            color: #1E293B;
+            transition: all 0.2s;
+        }
+
+        .skill-tag i {
+            margin-right: 6px;
+            color: #2563EB;
+        }
+
+        .skill-tag:hover {
+            background: #2563EB;
+            color: white;
+            border-color: #2563EB;
+        }
+
+        .skill-tag:hover i {
+            color: white;
+        }
+
+        .project-item {
+            background: #FFFFFF;
+            padding: 1.4rem 1.6rem;
+            border-radius: 20px;
+            margin-bottom: 1.2rem;
+            border: 1px solid #E2E8F0;
+            transition: transform 0.2s ease, box-shadow 0.2s, border-color 0.2s;
+            box-shadow: 0 4px 8px -4px rgba(0,0,0,0.02);
+        }
+
+        .project-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 25px -12px rgba(37,99,235,0.12);
+            border-color: #2563EB;
+        }
+
+        .project-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #0A2472;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-title i {
+            color: #2563EB;
+            margin-right: 8px;
+        }
+
+        .strength-hobby-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.8rem;
+            margin-top: 0.8rem;
+        }
+
+        .strength-list, .hobby-list {
+            list-style: none;
+        }
+
+        .strength-list li, .hobby-list li {
+            padding: 0.5rem 0;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-bottom: 1px dashed #E2E8F0;
+        }
+
+        .strength-list li i, .hobby-list li i {
+            color: #2563EB;
+            width: 1.5rem;
+            text-align: center;
+        }
+
+        .graphic-design-highlight {
+            background: #F8FAFC;
+            padding: 1.6rem;
+            border-radius: 24px;
+            margin-top: 1.2rem;
+            border: 1px solid #BFDBFE;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px dotted #CBD5E1;
+            margin: 2rem 0 0.5rem 0;
+            opacity: 0.7;
+        }
+
+        .footer-note {
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: #4B5563;
+        }
+
+        @media (max-width: 800px) {
+            .page { padding: 1.8rem; }
+            h1 { font-size: 2.2rem; }
+            .grid-2 { grid-template-columns: 1fr; }
+            .strength-hobby-grid { grid-template-columns: 1fr; }
+            .contact-bar { flex-direction: column; align-items: flex-start; gap: 10px; }
+        }
+
+        .city-tag {
+            background: #0A2472; /* deep navy */
+            color: white;
+            padding: 0.4rem 1.3rem;
+            border-radius: 60px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            border: none;
+            box-shadow: 0 4px 8px rgba(10,36,114,0.12);
+        }
+
+        .subject-badge {
+            background: #E6F0FA;
+            color: #0A2472;
+            padding: 0.2rem 0.8rem;
+            border-radius: 16px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-left: 0.5rem;
+            border: 1px solid #BFDBFE;
+            display: inline-block;
+            margin: 0.2rem;
+        }
+
+        .header-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .blue-icon-bg {
+            color: #2563EB;
+        }
+        
+        .btn-resume {
+            background: #2563EB;
+            color: white;
+            border: none;
+            padding: 0.5rem 1.5rem;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: background 0.2s;
+        }
+        .btn-resume:hover {
+            background: #0A2472;
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <!-- HEADER with clean navy + white -->
+        <div class="header-row">
+            <div>
+                <h1>SABA</h1>
+                <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-top: 5px;">
+                    <span class="city-tag"><i class="fas fa-location-dot" style="margin-right: 6px; color: #BFDBFE;"></i>Multan, Pakistan</span>
+                    <span class="edu-badge"><i class="fas fa-graduation-cap" style="color: #2563EB;"></i> 8th Semester · AI/ML</span>
+                </div>
+            </div>
+            <!-- professional emblem: blue abstract -->
+            <div style="color: #2563EB; font-size: 2.4rem; opacity: 0.7;">
+                <i class="fas fa-microchip"></i>
+                <i class="fas fa-chart-line" style="margin-left: 8px;"></i>
+            </div>
+        </div>
+        
+        <!-- CONTACT INFO – crisp blue & white -->
+        <div class="contact-bar">
+            <span class="contact-item"><i class="fas fa-phone-alt"></i> 0307-64713337</span>
+            <span class="contact-item"><i class="fas fa-envelope"></i> <a href="mailto:qsaba7367@gmail.com">qsaba7367@gmail.com</a></span>
+            <span class="contact-item"><i class="fas fa-map-pin"></i> Multan, PK</span>
+            <span class="contact-item"><i class="fas fa-briefcase"></i> AI Specialist</span>
+        </div>
+        
+        <!-- CAREER OBJECTIVE – clean white card with blue accent -->
+        <div style="background: #F8FAFC; padding: 1.6rem 1.8rem; border-radius: 24px; margin: 1.5rem 0 0.8rem; border: 1px solid #E2E8F0; border-top: 6px solid #2563EB;">
+            <h2 style="border-bottom: none; margin-top: 0; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 8px; color: #0A2472;">
+                <i class="fas fa-bullseye" style="color: #2563EB;"></i> Career Objective
+            </h2>
+            <p style="font-size: 1.05rem; font-weight: 350; line-height: 1.7; color: #1E293B;">
+                Motivated and detail-oriented final-year student specializing in Artificial Intelligence and Machine Learning. 
+                Strong background in programming, data analysis, and graphic design. Passionate about applying AI-driven solutions 
+                to real-world problems and continuously learning emerging technologies.
+            </p>
+        </div>
+        
+        <!-- EDUCATION -->
+        <h2><i class="fas fa-university" style="margin-right: 10px; color: #2563EB;"></i> Education</h2>
+        <div class="grid-2">
+            <!-- BS -->
+            <div class="edu-card">
+                <h3 style="margin-top: 0; color: #0A2472;"><i class="fas fa-laptop-code"></i> BS (8th Semester)</h3>
+                <p style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.2rem; color: #1E3A8A;">Bahauddin Zakariya University</p>
+                <p style="color: #4B5563; margin-bottom: 0.6rem;"><i>Current Subjects:</i> 
+                    <span style="display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.4rem;">
+                        <span class="subject-badge">Optimization Theory</span>
+                        <span class="subject-badge">Business Intelligence</span>
+                        <span class="subject-badge">Fuzzy Theory</span>
+                        <span class="subject-badge">Generative AI</span>
+                        <span class="subject-badge">Deep Learning</span>
+                    </span>
+                </p>
+            </div>
+            <!-- Intermediate & Matric -->
+            <div>
+                <div style="background: #F8FAFC; padding: 1.2rem 1.5rem; border-radius: 20px; margin-bottom: 1rem; border-left: 8px solid #2563EB; border-top: 1px solid #E2E8F0; border-right: 1px solid #E2E8F0; border-bottom: 1px solid #E2E8F0;">
+                    <h3 style="margin-bottom: 0.2rem; color: #0A2472;"><i class="fas fa-flask"></i> Intermediate (Pre-Engineering)</h3>
+                    <p style="font-weight: 600; color: #1E3A8A;">City College <span style="font-weight: 400; color: #4B5563;">– 976/1100 Marks</span></p>
+                    <span class="marks"><i class="fas fa-star" style="color: #2563EB;"></i> 88.7%</span>
+                </div>
+                <div style="background: #F8FAFC; padding: 1.2rem 1.5rem; border-radius: 20px; border-left: 8px solid #1E3A8A; border-top: 1px solid #E2E8F0; border-right: 1px solid #E2E8F0; border-bottom: 1px solid #E2E8F0;">
+                    <h3 style="margin-bottom: 0.2rem; color: #0A2472;"><i class="fas fa-school"></i> Matriculation</h3>
+                    <p style="font-weight: 600; color: #1E3A8A;">Govt. Girls High School, Multan <span style="font-weight: 400; color: #4B5563;">– 987/1100 Marks</span></p>
+                    <span class="marks"><i class="fas fa-star" style="color: #2563EB;"></i> 89.7%</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- TECHNICAL SKILLS – blue & white professional -->
+        <h2 style="margin-top: 2.5rem;"><i class="fas fa-code" style="color: #2563EB;"></i> Technical Skills</h2>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.8rem;">
+            <!-- Programming & AI -->
+            <div>
+                <h3 style="color: #0A2472; border-bottom: 2px solid #2563EB; padding-bottom: 5px;"><i class="fas fa-terminal"></i> Programming Languages</h3>
+                <div class="skill-blocks">
+                    <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
+                    <span class="skill-tag"><i class="fas fa-code"></i> C++</span>
+                    <span class="skill-tag"><i class="fab fa-java"></i> Java</span>
+                    <span class="skill-tag"><i class="fas fa-calculator"></i> MATLAB</span>
+                </div>
+                <h3 style="color: #0A2472; margin-top: 1.5rem; border-bottom: 2px solid #2563EB; padding-bottom: 5px;"><i class="fas fa-brain"></i> AI &amp; Data Science</h3>
+                <div class="skill-blocks">
+                    <span class="skill-tag">Machine Learning</span>
+                    <span class="skill-tag">Deep Learning</span>
+                    <span class="skill-tag">Generative AI</span>
+                    <span class="skill-tag">Optimization Techniques</span>
+                    <span class="skill-tag">Fuzzy Logic</span>
+                    <span class="skill-tag">Business Intelligence</span>
+                    <span class="skill-tag">Data Visualization</span>
+                </div>
+            </div>
+            <!-- Other tools & graphic design -->
+            <div>
+                <h3 style="color: #0A2472; border-bottom: 2px solid #2563EB; padding-bottom: 5px;"><i class="fas fa-paint-brush"></i> Creative &amp; Tools</h3>
+                <div class="skill-blocks">
+                    <span class="skill-tag"><i class="fas fa-paint-brush"></i> Canva</span>
+                    <span class="skill-tag"><i class="fas fa-file-alt"></i> MS Office</span>
+                    <span class="skill-tag"><i class="fas fa-chart-line"></i> Data Viz</span>
+                    <span class="skill-tag"><i class="fas fa-palette"></i> Poster Design</span>
+                    <span class="skill-tag"><i class="fas fa-object-group"></i> Academic Posters</span>
+                </div>
+                <div class="graphic-design-highlight">
+                    <i class="fas fa-paintbrush" style="color: #2563EB; font-size: 1.6rem; float: right; opacity: 0.8;"></i>
+                    <h4 style="color: #0A2472; font-weight: 700; margin-bottom: 5px;">Graphic Designing Skills</h4>
+                    <p style="margin-bottom: 0; color: #1E293B;">Professional poster creation using Canva · Academic and technical poster design · Creative layout and visual presentation skills.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- PROJECTS -->
+        <h2 style="margin-top: 2.2rem;"><i class="fas fa-flask" style="color: #2563EB;"></i> Projects</h2>
+        <div style="display: grid; gap: 1.2rem;">
+            <div class="project-item">
+                <div class="project-title"><i class="fas fa-coins"></i> Cryptocurrency Analysis Project</div>
+                <p style="margin-bottom: 8px; color: #334155;">Performed data analysis on cryptocurrency market trends · Applied machine learning models for prediction · Visualized insights using analytical tools.</p>
+                <span style="display: inline-block; background: #E6F0FA; padding: 0.25rem 1rem; border-radius: 30px; font-size: 0.8rem; font-weight: 600; color: #0A2472; border: 1px solid #BFDBFE;"><i class="fas fa-chart-simple"></i> #ML #Python #Viz</span>
+            </div>
+            <div class="project-item">
+                <div class="project-title"><i class="fas fa-chalkboard"></i> Functional Analysis Poster Project</div>
+                <p style="margin-bottom: 8px; color: #334155;">Designed and presented an academic research poster · Explained complex mathematical concepts visually · Canva design.</p>
+                <span style="display: inline-block; background: #E6F0FA; padding: 0.25rem 1rem; border-radius: 30px; font-size: 0.8rem; font-weight: 600; color: #0A2472; border: 1px solid #BFDBFE;"><i class="fas fa-palette"></i> #GraphicDesign #AcademicPoster</span>
+            </div>
+            <div class="project-item">
+                <div class="project-title"><i class="fas fa-paintbrush"></i> Graphic Designing Portfolio</div>
+                <p style="margin-bottom: 8px; color: #334155;">Professional poster creation using Canva. Wide portfolio of academic and technical posters, creative layout, and visual presentation.</p>
+                <span style="display: inline-block; background: #E6F0FA; padding: 0.25rem 1rem; border-radius: 30px; font-size: 0.8rem; font-weight: 600; color: #0A2472; border: 1px solid #BFDBFE;"><i class="fas fa-crown"></i> #Canva #Design</span>
+            </div>
+        </div>
+
+        <!-- STRENGTHS & HOBBIES in blue & white harmony -->
+        <div class="strength-hobby-grid" style="margin-top: 2rem;">
+            <!-- strengths -->
+            <div style="background: #F8FAFC; padding: 1.5rem 1.8rem; border-radius: 24px; border: 1px solid #E2E8F0; border-top: 6px solid #2563EB;">
+                <h3 style="color: #0A2472; margin-top: 0; border-bottom: 2px solid #2563EB; padding-bottom: 8px;"><i class="fas fa-trophy"></i> Strengths</h3>
+                <ul class="strength-list">
+                    <li><i class="fas fa-chart-pie"></i> Strong analytical and problem-solving abilities</li>
+                    <li><i class="fas fa-bolt"></i> Creative and technical skill combination</li>
+                    <li><i class="fas fa-rocket"></i> Quick learner and adaptable</li>
+                    <li><i class="fas fa-comments"></i> Good communication and presentation skills</li>
+                </ul>
+            </div>
+            <!-- hobbies -->
+            <div style="background: #FFFFFF; padding: 1.5rem 1.8rem; border-radius: 24px; border: 1px solid #E2E8F0; border-top: 6px solid #1E3A8A;">
+                <h3 style="color: #0A2472; margin-top: 0; border-bottom: 2px solid #2563EB; padding-bottom: 8px;"><i class="fas fa-heart"></i> Hobbies</h3>
+                <ul class="hobby-list">
+                    <li><i class="fas fa-book-open"></i> Book Reading</li>
+                    <li><i class="fas fa-paint-brush"></i> Painting</li>
+                    <li><i class="fas fa-robot"></i> Exploring new AI create</li>
+                    <li><i class="fas fa-camera"></i> Creative sketching</li>
+                </ul>
+                <p style="margin-top: 0.8rem; font-style: italic; color: #4B5563;"><i class="fas fa-sparkles" style="color: #2563EB;"></i> "Exploring new AI" — always learning.</p>
+            </div>
+        </div>
+        
+        <!-- subtle divider -->
+        <hr>
+        
+        <!-- FOOTER with blue & white professional signature -->
+        <div class="footer-note">
+            <span style="background: #0A2472; padding: 0.3rem 1.2rem; border-radius: 60px; color: white; font-weight: 500;">
+                <i class="fas fa-microchip"></i> SABA · Artificial Intelligence &amp; ML · Multan <i class="fas fa-microchip"></i>
+            </span>
+            <p style="margin-top: 1.2rem; font-size: 0.85rem; color: #4B5563;">
+                Professional blue &amp; white design · Clean · Corporate · Trust
+            </p>
+        </div>
+    </div>
+    <!-- end page -->
+
+</body></html>
